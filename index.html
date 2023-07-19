@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser Buddy</title>
+  <script src="browserBuddy.js"></script>
+  <style type="text/css">
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-family: verdana;
+    }
+    h2 {
+      font-family: verdana;
+      color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Browser Buddy</h2>
+  <input type="text" style="width: 80%; padding: 5px; font-size: 110%;" onchange="processInput([this.value, 'displaymessage']); this.value = ''"/>
+  <input type="button" style="padding: 5px; font-size: 110%;" onclick="speechRecog()" value="Mic"/>
+  <div id="displaymessage" style="overflow: auto; height: 400px;"></div>
+</body>
+</html>
